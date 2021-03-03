@@ -7,7 +7,7 @@ pale white: #E5E5DC
  */
 
 
-html {
+ html {
     font-family: 'Noto Sans', sans-serif;
     background-color: #334259;
     color: #EDDDD0;
@@ -123,44 +123,6 @@ h1 {
     align-self: start;
 }
 
-/* Sidebar */
-.sidebar {
-    grid-area: sidebar;
-    background-color: #E5E5DC;
-    color: #334259;
-}
-
-/* Content */
-.content {
-    grid-area: content;
-    background-color: #E5E5DC;
-    color: #334259;
-  }
-
-
-/* Footer (Bottom) */
-footer {
-    grid-area: footer;
-    background-color:#334259;
-    color: #EDDDD0;
-  }
-
-.footer-list{
-    display: flex;
-}
-
-.footer-list li {
-    list-style-type: none;
-    padding: 0.5em;
-}
-
-#customerservice{
-    margin-left: auto
-}
-
-
-
-/* Images */
 img {
     border-radius: 10px;
     margin-right: 1em;
