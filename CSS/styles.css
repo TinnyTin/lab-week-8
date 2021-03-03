@@ -107,7 +107,26 @@ h1 {
     background-color: #E5E5DC;
     color: #334259;
     padding: 0.5em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    'image text'
   }
+
+
+
+.img-container{
+    grid-area: image;
+    padding: 0.5em;
+    justify-self: end;
+    align-self: start;
+}
+
+img {
+    border-radius: 10px;
+    margin-right: 1em;
+}
 
 
 /* Footer (Bottom) */
@@ -130,13 +149,3 @@ footer {
     margin-left: auto
 }
 
-
-
-/* Images */
-img {
-    float: left;
-    border-radius: 10px;
-    width: 15%;
-    height: 15%;
-    margin-right: 1em;
-}
