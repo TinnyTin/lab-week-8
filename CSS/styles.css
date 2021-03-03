@@ -19,36 +19,31 @@ html {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 0.25fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-areas:
       'header header header'
       'sidebar content content'
       'footer footer footer';
-
   }
 
   ul {
     display: flex;
     padding: 0;
-    margin: 0 1vw;
+    margin: 0 0;
     flex-wrap: wrap; 
+    
 }
 
 /* Header (Top) */
 header {
     grid-area: header;
 }
-.title-box {
-    display: flex;
-    background-color: #6E8783;
-    justify-content: center;
-}
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.5em;
     font-weight: 300;
     margin: 0.1em;
-    color: #EDDDD0;
+    color: #334259
 }
 
 /* Navigation Bar */
@@ -63,6 +58,7 @@ h1 {
 
 .menu li:hover {
     background-color: #DB504A;
+    border-radius: 5px;
 }
 
 .menu a {
@@ -74,11 +70,35 @@ h1 {
     color:#E5E5DC;
 }
 
+
 /* Sidebar */
 .sidebar {
     grid-area: sidebar;
-    background-color: #E5E5DC;
-    color: #334259;
+    background-color: #334259;
+    color:#EDDDD0;
+}
+
+.sidebar > p {
+    padding: 1vw;
+}
+.side-menu{
+    display: flex;
+    flex-direction:column;
+}
+
+.side-menu li{
+    list-style-type: none;
+    padding: 1em;
+}
+
+.side-menu li:hover {
+    background-color: #DB504A;
+    border-radius: 5px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color:#EDDDD0;
 }
 
 /* Content */
@@ -86,6 +106,7 @@ h1 {
     grid-area: content;
     background-color: #E5E5DC;
     color: #334259;
+    padding: 0.5em;
   }
 
 
