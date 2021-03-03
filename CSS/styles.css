@@ -26,7 +26,7 @@ html {
       'footer footer footer';
   }
 
-  ul {
+ul {
     display: flex;
     padding: 0;
     margin: 0 0;
